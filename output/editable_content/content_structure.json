@@ -1,0 +1,134 @@
+[
+  {
+    "page": 1,
+    "text_file": "page_1.txt",
+    "images": [
+      {
+        "filename": "page1_img1.png",
+        "width": 2390,
+        "height": 3278
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "text_file": "page_2.txt",
+    "images": [
+      {
+        "filename": "page2_img1.png",
+        "width": 2390,
+        "height": 3278
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "text_file": "page_3.txt",
+    "images": [
+      {
+        "filename": "page3_img1.png",
+        "width": 2383,
+        "height": 3275
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "text_file": "page_4.txt",
+    "images": [
+      {
+        "filename": "page4_img1.png",
+        "width": 2383,
+        "height": 3275
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "text_file": "page_5.txt",
+    "images": [
+      {
+        "filename": "page5_img1.png",
+        "width": 2381,
+        "height": 3274
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "text_file": "page_6.txt",
+    "images": [
+      {
+        "filename": "page6_img1.png",
+        "width": 2381,
+        "height": 3274
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "text_file": "page_7.txt",
+    "images": [
+      {
+        "filename": "page7_img1.png",
+        "width": 2384,
+        "height": 3274
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "text_file": "page_8.txt",
+    "images": [
+      {
+        "filename": "page8_img1.png",
+        "width": 2384,
+        "height": 3274
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "text_file": "page_9.txt",
+    "images": [
+      {
+        "filename": "page9_img1.png",
+        "width": 2384,
+        "height": 3278
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "text_file": "page_10.txt",
+    "images": [
+      {
+        "filename": "page10_img1.png",
+        "width": 2384,
+        "height": 3278
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "text_file": "page_11.txt",
+    "images": [
+      {
+        "filename": "page11_img1.png",
+        "width": 2383,
+        "height": 3275
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "text_file": "page_12.txt",
+    "images": [
+      {
+        "filename": "page12_img1.png",
+        "width": 2383,
+        "height": 3275
+      }
+    ]
+  }
+]
