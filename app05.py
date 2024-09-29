@@ -4,6 +4,14 @@ import json
 from PIL import Image
 import io
 
+def load_png_image(file_path):
+    try:
+        with Image.open(file_path) as img:
+            return img.copy()  # 画像のコピーを返す
+    except IOError:
+        print(f"画像ファイルを開けませんでした: {file_path}")
+        return None
+
 def extract_editable_content(pdf_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
     
@@ -28,7 +36,7 @@ def extract_editable_content(pdf_path, output_dir):
                 
                 # 画像の保存
                 image_filename = f"page{page_num + 1}_img{img_index + 1}.png"
-                image.save(os.path.join(output_dir, image_filename))
+                image.save(os.path.join(output_dir, image_filename), "PNG", optimize=True)
                 
                 # 画像情報の記録
                 page_content["images"].append({
@@ -44,7 +52,7 @@ def extract_editable_content(pdf_path, output_dir):
         json.dump(content_structure, f, ensure_ascii=False, indent=2)
 
 # 使用例
-pdf_path = 'data/chapter01.pdf'  # あなたのPDFファイルのパスに置き換えてください
+pdf_path = 'data/自家歯牙移植_増補新版_月星光博/chapter01.pdf'  # あなたのPDFファイルのパスに置き換えてください
 output_dir = 'output/editable_content'
 
 try:
