@@ -1,56 +1,46 @@
 [
   {
     "page": 1,
-    "text_file": "page_1.txt",
+    "text_file": "page_01.txt",
     "images": [
       {
-        "filename": "page1_img1.png",
-        "width": 2390,
-        "height": 3278
+        "filename": "page01_img01.png"
       }
     ]
   },
   {
     "page": 2,
-    "text_file": "page_2.txt",
+    "text_file": "page_02.txt",
     "images": [
       {
-        "filename": "page2_img1.png",
-        "width": 2390,
-        "height": 3278
+        "filename": "page02_img01.png"
       }
     ]
   },
   {
     "page": 3,
-    "text_file": "page_3.txt",
+    "text_file": "page_03.txt",
     "images": [
       {
-        "filename": "page3_img1.png",
-        "width": 2383,
-        "height": 3275
+        "filename": "page03_img01.png"
       }
     ]
   },
   {
     "page": 4,
-    "text_file": "page_4.txt",
+    "text_file": "page_04.txt",
     "images": [
       {
-        "filename": "page4_img1.png",
-        "width": 2383,
-        "height": 3275
+        "filename": "page04_img01.png"
       }
     ]
   },
   {
     "page": 5,
-    "text_file": "page_5.txt",
+    "text_file": "page_05.txt",
     "images": [
       {
-        "filename": "page5_img1.png",
-        "width": 2381,
-        "height": 3274
+        "filename": "page05_img01.png"
       }
     ]
   }

@@ -19,7 +19,8 @@ def extract_editable_content(pdf_path, output_dir):
     
     with fitz.open(pdf_path) as doc:
         for page_num, page in enumerate(doc):
-            page_content = {"page": page_num + 1, "text_file": f"page_{page_num + 1}.txt", "images": []}
+            padded_page_num = f"{page_num + 1:02d}"
+            page_content = {"page": page_num + 1, "text_file": f"page_{padded_page_num}.txt", "images": []}
             
             # テキスト抽出と保存
             text = page.get_text()
@@ -35,14 +36,13 @@ def extract_editable_content(pdf_path, output_dir):
                 image = Image.open(io.BytesIO(image_bytes))
                 
                 # 画像の保存
-                image_filename = f"page{page_num + 1}_img{img_index + 1}.png"
+                padded_img_num = f"{img_index + 1:02d}"
+                image_filename = f"page{padded_page_num}_img{padded_img_num}.png"
                 image.save(os.path.join(output_dir, image_filename), "PNG", optimize=True)
                 
                 # 画像情報の記録
                 page_content["images"].append({
-                    "filename": image_filename,
-                    "width": image.width,
-                    "height": image.height
+                    "filename": image_filename
                 })
             
             content_structure.append(page_content)
